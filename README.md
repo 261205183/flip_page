@@ -11,6 +11,15 @@ import sys
 # コマンドライン引数から入力画像と出力画像のファイル名を取得
 input_image = sys.argv[1]
 output_image = sys.argv[2]
+
+# 画像の読み込み
+img = Image.open(input_image)
+
+# 画像の左右反転
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
+
+# 画像の保存
+img_flip.save(output_image)
 ```
 ## 3.使い方
 ### 3.1. 実行例
@@ -24,4 +33,6 @@ python3 filp.py input.jpg output.jpg
 ```
 ### 3.2. 出力結果
 - 以下のように入力画像の左右反転画像が出力されます。
-- 
+入力画像 (input.jpg)|出力画像 (output.jpg)|
+|![反転前]("C:\Users\souh9\Downloads\CL-12_圧縮解凍後index.htmlを開く\CL-12_圧縮解凍後index.htmlを開く\利用素材\input.jpg")|![反転後]("C:\Users\souh9\Downloads\CL-12_圧縮解凍後index.htmlを開く\CL-12_圧縮解凍後index.htmlを開く\利用素材\output.jpg")|
+以上
