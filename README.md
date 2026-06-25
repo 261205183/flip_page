@@ -34,5 +34,6 @@ python3 filp.py input.jpg output.jpg
 ### 3.2. 出力結果
 - 以下のように入力画像の左右反転画像が出力されます。
 |入力画像 (input.jpg)|出力画像 (output.jpg)|
+|---|---|
 |![反転前](input.jpg)|![反転後](output.jpg)|
 以上
